@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Fulgate';
+    src: local('Fulgate Medium'), local('Fulgate-Medium'),
+        url('Fulgate-Medium.woff2') format('woff2'),
+        url('Fulgate-Medium.woff') format('woff'),
+        url('Fulgate-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    font-style: normal;
+  }

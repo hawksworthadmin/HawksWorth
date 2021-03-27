@@ -1,28 +1,49 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <transition name="slither">
+    <router-view/>
+    </transition>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  export default {
+    mounted() {
+      const header = document.querySelector(".header-text");
+      console.log(header)
+      const app_container = document.querySelector('.hero-class')
+      const sectionObserver = new IntersectionObserver(((entries) => {
+        console.log(entries)
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            header.style.background = '#2B3367'
+          } else header.style.background = "transparent"
+        })
+      }), {threshold: .1})
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+      sectionObserver.observe(app_container)
+    },
+    methods:{
+      changeHeaderColor(){
+
+      }
+    }
   }
-}
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+  font-family: "Fulgate";
+  src: local("Fulgate-Medium"),
+  url(./font/Fulgate-Medium/Fulgate-Medium.ttf) format("truetype");
 }
+/*.slither-enter-active, .slither-leave-active {*/
+/*  transition: transform 0.5s;*/
+/*}*/
+
+/*.slither-enter, .slither-leave-to {*/
+/*  transform: translateX(-100%);*/
+/*}*/
+
+/*.slither-enter-to, .slither-leave {*/
+/*  transform: translateX(0);*/
+/*}*/
 </style>

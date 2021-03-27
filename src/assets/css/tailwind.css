@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header-style{
+    background-color: transparent;
+    @apply h-24 justify-evenly items-center
+}
+.gold-button{
+
+    @apply  py-2 px-4  font-semibold rounded-sm
+}
+.active{
+    border-bottom: 2px solid #D5AF36;
+    transition-timing-function: ease-out;
+    transition: 1s;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fulgate';
+    src: local('Fulgate Regular'), local('Fulgate-Regular'),
+        url('Fulgate-Regular.woff2') format('woff2'),
+        url('Fulgate-Regular.woff') format('woff'),
+        url('Fulgate-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
