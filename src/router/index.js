@@ -25,7 +25,7 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   linkExactActiveClass: "active",
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior() {
     return {
       x: 0, y: 0,
       behavior: 'smooth'
