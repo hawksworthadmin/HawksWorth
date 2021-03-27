@@ -1,6 +1,6 @@
 <template>
   <div class="lg:mb-44 md:mb-44 mb-24 px-4  lg:px-0">
-    <div class="text-white hidden lg:block md:block fixed right-0 transform rotate-90">
+    <div class="text-white lg:-mr-11 md:-mr-7  hidden lg:block md:block fixed right-0 transform rotate-90">
       <HireButton :title="'CONTACT US'" class="mr-0"></HireButton>
     </div>
     <div class="flex justify-evenly flex-col lg:flex-row md:items-center lg:items-center w-full" style="margin: 0 auto">

@@ -19,7 +19,7 @@
           SERVICES.
         </h2>
       </div>
-      <div class="text-white hidden lg:block md:block  mt-8 fixed right-0 transform rotate-90">
+      <div class="text-white hidden lg:block md:block lg:-mr-11 md:-mr-7  mt-8 fixed right-0 transform rotate-90">
         <HireButton :title="'CONTACT US'" class="mr-0"></HireButton>
       </div>
     </div>
