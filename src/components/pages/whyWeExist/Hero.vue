@@ -22,7 +22,7 @@
 
 <script>
 import Header from "@/components/layout/Header";
-import HireButton from "@/components/pages/HireButton";
+import HireButton from "@/components/pages/whyWeExist/HireButton";
 export default {
 name: "Hero",
   components: {HireButton, Header}

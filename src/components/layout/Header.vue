@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import HireButton from "@/components/pages/HireButton";
+import HireButton from "@/components/pages/whyWeExist/HireButton";
 import MobileSideNav from "@/components/layout/MobileSideNav";
 export default {
 name: "Header",

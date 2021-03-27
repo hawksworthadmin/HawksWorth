@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import HireButton from "@/components/pages/HireButton";
+import HireButton from "@/components/pages/whyWeExist/HireButton";
 export default {
 name: "WhoWeAre",
   components: {HireButton}

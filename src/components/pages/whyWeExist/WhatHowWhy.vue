@@ -56,18 +56,5 @@ name: "WhatHowWhy"
 </script>
 
 <style scoped>
-@screen lg{
-  .gray-margin{
-    @apply mx-52
-  }
-
-}
-
-
-@media screen and  (min-width: 1024px) and (max-width:1228px) {
-  .gray-margin{
-    @apply mx-20
-  }
-}
 
 </style>
