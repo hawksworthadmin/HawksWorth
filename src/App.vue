@@ -7,26 +7,26 @@
 </template>
 <script>
   export default {
-    mounted() {
-      const header = document.querySelector(".header-text");
-      console.log(header)
-      const app_container = document.querySelector('.hero-class')
-      const sectionObserver = new IntersectionObserver(((entries) => {
-        console.log(entries)
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) {
-            header.style.background = '#2B3367'
-          } else header.style.background = "transparent"
-        })
-      }), {threshold: .1})
-
-      sectionObserver.observe(app_container)
-    },
-    methods:{
-      changeHeaderColor(){
-
-      }
-    }
+    // mounted() {
+    //   const header = document.querySelector(".header-text");
+    //   console.log(header)
+    //   const app_container = document.querySelector('.hero-class')
+    //   const sectionObserver = new IntersectionObserver(((entries) => {
+    //     console.log(entries)
+    //     entries.forEach(entry => {
+    //       if (!entry.isIntersecting) {
+    //         header.style.background = '#2B3367'
+    //       } else header.style.background = "transparent"
+    //     })
+    //   }), {threshold: .1})
+    //
+    //   sectionObserver.observe(app_container)
+    // },
+    // methods:{
+    //   changeHeaderColor(){
+    //
+    //   }
+    // }
   }
 </script>
 <style>

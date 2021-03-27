@@ -25,7 +25,27 @@ import Header from "@/components/layout/Header";
 import HireButton from "@/components/pages/whyWeExist/HireButton";
 export default {
 name: "Hero",
-  components: {HireButton, Header}
+  components: {HireButton, Header},
+  mounted() {
+    const header = document.querySelector(".header-text");
+    console.log(header)
+    const app_container = document.querySelector('.hero-class')
+    const sectionObserver = new IntersectionObserver(((entries) => {
+      console.log(entries)
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          header.style.background = '#2B3367'
+        } else header.style.background = "transparent"
+      })
+    }), {threshold: .1})
+
+    sectionObserver.observe(app_container)
+  },
+  methods:{
+    changeHeaderColor(){
+
+    }
+  }
 }
 </script>
 
