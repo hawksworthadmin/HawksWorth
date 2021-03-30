@@ -24,11 +24,12 @@
       </div>
     </div>
     <div
-        class="flex px-6 lg:px-0 lg:mt-56 mt-16 flex-div flex-col items-center md:flex-col lg:flex-row justify-between ">
+        class="flex px-6 lg:px-0 lg:mt-56 mt-16 flex-div flex-col items-center md:flex-col lg:flex-row ">
       <div>
         <img src="@/assets/img/man-writing.png" alt="" width="531" height="660"/>
       </div>
-      <div class="lato  lg:pr-36 pr-0 lg:w-770 alliance-group  w-full">
+
+      <div class="lato  lg:px-36 lg:mx-auto  pr-0 lg:w-998 alliance-group  w-full">
         <h2 class="text-2xl mt-8 lg:mt-0 alliance font-extrabold text-white">Our Alliances</h2>
         <br>
         <p class="font-bold">Today’s dynamic business challenges require solutions that are agile,

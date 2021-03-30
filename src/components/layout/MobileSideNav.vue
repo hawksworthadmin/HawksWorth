@@ -1,6 +1,6 @@
 <template>
-  <div class="nav-wrapper" :class="{'in-show':showMobileNav}">
-    <div id="sidenav" class="blue-color lato ">
+  <div class="nav-wrapper" :class="{'in-show': showMobileNav}">
+    <div  class="blue-color lato sidenav">
       <div class="mt-4">
       <span class="ml-8" @click="$emit('close-nav')" >X Close</span>
       </div>
@@ -45,26 +45,26 @@ export default {
   position: fixed;
   height: 100%;
   width: 100vw;
-  transform: translatex(-600px);
-  right: 0;
+  transform: translateY(-1200px);
+  left: 0;
   bottom: 0;
   transition: all .5s;
-  z-index: 1;
+
 }
 
 #overlay {
   background: rgba(0, 0, 0, .5);
-  /*width: 20%;*/
-  height: 100%;
+  width: 100%;
+  height: 25vh;
 }
 
-#sidenav {
-  height: 100%;
-  width: 80%;
+.sidenav {
+  height: 75vh;
+  width: 100%;
   position: absolute;
   z-index: 2;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: white;
   overflow-x: hidden;
   transition: 1s;

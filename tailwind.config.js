@@ -13,7 +13,7 @@ module.exports = {
       width:{
         '394':'394px',
         '454':'454px',
-        '770':'770px',
+        '998':'998px',
         '800':'800px'
       },
       paddingTop:{

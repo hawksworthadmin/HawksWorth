@@ -7,7 +7,7 @@
       </div>
 
     </div>
-    <MobileSideNav :show-mobile-nav="showMobileNav" @close-nav="showMobileNav=false" v-show="showMobileNav"></MobileSideNav>
+    <MobileSideNav :show-mobile-nav="showMobileNav" @close-nav="showMobileNav=false" ></MobileSideNav>
   <div class="lg:flex md:flex hidden header-text lato header-style fixed right-0 left-0 z-2">
       <div class="w-28 h-6 bg-white flex justify-center items-center">
         <img src="@/assets/img/logo.svg" alt="">
