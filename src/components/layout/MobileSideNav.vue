@@ -9,7 +9,7 @@
         <br>
         <router-link to="/hawksworth/how"><p>HOW WE WORK</p></router-link>
         <br>
-        <p>WHAT WE DO</p>
+        <router-link to="/hawksworth/what"> <p>WHAT WE DO</p></router-link>
         <br>
         <HireButton :title="'CONTACT US'" class="mr-0 text-white"></HireButton>
         <br>
@@ -49,13 +49,14 @@ export default {
   left: 0;
   bottom: 0;
   transition: all .5s;
+  z-index: 2;
 
 }
 
 #overlay {
   background: rgba(0, 0, 0, .5);
   width: 100%;
-  height: 25vh;
+  height: 100vh;
 }
 
 .sidenav {

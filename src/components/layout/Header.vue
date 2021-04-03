@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex md:hidden lg:hidden pl-7 pt-8">
+    <div class="flex md:hidden lg:hidden pl-7 pt-8 fixed z-2">
       <img src="@/assets/img/humburger.svg" class="mr-6" @click="showMobileNav=!showMobileNav"/>
       <div class="w-28 h-6 bg-white flex justify-center items-center">
         <img src="@/assets/img/logo.svg" alt="">
@@ -15,7 +15,7 @@
     <div class="flex justify-evenly w-2/5 tracking-wide text-xs  font-black">
       <router-link to="/"><p>WHY WE EXIST</p></router-link>
       <router-link to="/hawksworth/how"><p>HOW WE WORK</p></router-link>
-      <p>WHAT WE DO</p>
+      <router-link to="/hawksworth/what"> <p>WHAT WE DO</p></router-link>
 
     </div>
     <div class="flex font-semibold text-xs">

@@ -54,6 +54,13 @@ html, body{
    font-family: Lato, serif;
     font-style: normal;
 }
+.expertise-tab{
+    font-family: Fulgate, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 117.5%;
+}
 .hero-wrapper{
     margin: 0 auto;
     width: 33rem;
@@ -62,6 +69,24 @@ html, body{
     /*width: 454px;*/
     height: auto;
     margin: 0 auto;
+}
+.rotate-45:hover{
+    transform: rotate(45deg);
+}
+
+.rotate-45{
+    transition: transform .7s ease;
+}
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+    /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
 }
 @screen lg{
     .gray-margin{
