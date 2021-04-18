@@ -5,7 +5,7 @@
       <div class="lg:pl-80 md:pl-28">
         <div class="flex">
           <div style="border: 3px solid #D5AF36; height: 45px; margin-top: 5px; margin-right: 15px"></div>
-          <h5 class="lg:w-80 md:w-80 w-full text-width font-semibold text-base" style="color: #F4F5F7">Complex problems of today
+          <h5 class="lg:w-80 md:w-80 w-full alliance-text-width font-semibold text-base" style="color: #F4F5F7">Complex problems of today
             require modern solutions.
             Organizations within our network readily collaborate with us
             to approach problems differently and all work together to create
@@ -14,7 +14,7 @@
         </div>
         <br>
         <br>
-        <h2 class="lg:w-1/3 md:w-3/4 text-width w-full lg:text-2xl text-xl font-extrabold">
+        <h2 class="lg:w-1/3 md:w-3/4 alliance-text-width w-full lg:text-2xl text-xl font-extrabold">
           WE PARTNER WITH AND SERVE COMMUNITIES, GOVERNMENTS AND CORPORATE GLOBALLY, PROVIDING AN INNOVATIVE MIX OF
           SERVICES.
         </h2>
@@ -80,21 +80,22 @@ import Header from "@/components/layout/Header";
 export default {
   name: "Hero",
   components: {Header, HireButton},
-  mounted() {
-    const header = document.querySelector(".header-text");
-    console.log(header)
-    const app_container = document.querySelector('.hero-class')
-    const sectionObserver = new IntersectionObserver(((entries) => {
-      console.log(entries)
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-          header.style.background = '#2B3367'
-        } else header.style.background = "transparent"
-      })
-    }), {threshold: .1})
-
-    sectionObserver.observe(app_container)
-  },
+  // mounted() {
+  //   console.log('mounted')
+  //   const header = document.querySelector("header");
+  //   console.log(header)
+  //   const hero_container = document.querySelector('.hero-class1')
+  //   const sectionObserver = new IntersectionObserver(((entries) => {
+  //     console.log(entries)
+  //     entries.forEach(entry => {
+  //       if (!entry.isIntersecting) {
+  //         header.classList.add("how-nav-color")
+  //       } else header.classList.remove("how-nav-color")
+  //     })
+  //   }), {threshold: .1})
+  //
+  //   sectionObserver.observe(hero_container)
+  // },
   methods:{
     changeHeaderColor(){
 
@@ -103,8 +104,8 @@ export default {
 }
 </script>
 
-<style scoped>
-p {
+<style>
+.alliance-group p {
   margin-bottom: 26px !important;
   font-style: normal;
   font-weight: 600;
@@ -114,12 +115,17 @@ p {
   /* or 18px */
 }
 
-span {
+.alliance-group span {
   color: #D5AF36;
 }
+.how-nav-color{
+  background:#2B3367;
+  z-index: 2;
+}
+
 
 @media screen and  (min-width: 1024px) and (max-width: 1374px) {
-  .text-width {
+  .alliance-text-width {
     width: 60%;
   }
 

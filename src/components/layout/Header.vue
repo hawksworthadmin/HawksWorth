@@ -2,14 +2,14 @@
   <div>
     <div class="flex md:hidden lg:hidden pl-7 pt-8 fixed z-2">
       <img src="@/assets/img/humburger.svg" class="mr-6" @click="showMobileNav=!showMobileNav"/>
-      <div class="w-28 h-6 bg-white flex justify-center items-center">
-        <img src="@/assets/img/logo.svg" alt="">
+      <div class="w-28 h-6 bg-white flex justify-center items-center" style="cursor: pointer" @click="goToHomePage">
+        <img src="@/assets/img/logo.svg" alt="" >
       </div>
 
     </div>
-    <MobileSideNav :show-mobile-nav="showMobileNav" @close-nav="showMobileNav=false" ></MobileSideNav>
-  <div class="lg:flex md:flex hidden header-text lato header-style fixed right-0 left-0 z-2">
-      <div class="w-28 h-6 bg-white flex justify-center items-center">
+    <MobileSideNav class="md:hidden lg:hidden" :show-mobile-nav="showMobileNav" @close-nav="showMobileNav=false" ></MobileSideNav>
+  <header class="lg:flex md:flex hidden header-text lato header-style fixed right-0 left-0 z-2">
+      <div class="w-28 h-6 bg-white flex justify-center items-center" style="cursor: pointer" @click="goToHomePage">
         <img src="@/assets/img/logo.svg" alt="">
       </div>
     <div class="flex justify-evenly w-2/5 tracking-wide text-xs  font-black">
@@ -24,7 +24,7 @@
         <p>JOIN US</p>
       </div>
     </div>
-  </div>
+  </header>
   </div>
 </template>
 
@@ -38,6 +38,11 @@ name: "Header",
       return{
         showMobileNav:false
       }
+  },
+  methods: {
+    goToHomePage() {
+      this.$router.push({path: '/'})
+    }
   }
 }
 </script>

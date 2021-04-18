@@ -3,9 +3,9 @@
     <div class="mx-auto w-4/5">
       <div class="flex justify-end text-white pt-20">
         <div class="justify-between flex " style="width: 500px">
-          <p>WHY WE EXIST</p>
-          <p>HOW WE WORK</p>
-          <p>WHAT WE DO</p>
+          <p style="cursor: pointer" @click="$router.push('/')">WHY WE EXIST</p>
+          <p @click="$router.push('/hawksworth/how')" style="cursor: pointer">HOW WE WORK</p>
+           <p @click="$router.push('/hawksworth/what')" style="cursor: pointer">WHAT WE DO</p>
         </div>
       </div>
       <div class="my-16" style="border: 0.5px solid #FFFFFF;"></div>
@@ -14,7 +14,7 @@
           <p>Hawksworth Advisors strategic advisory firm combines the
             best of private sector strategy skills and rigorous analytical
             capabilities along with deep knowledge and networks across
-            emerging and frontier markets with special focus on Africa.</p>
+            emerging and frontier markets with special focus on Africa and emerging markets.</p>
         </div>
         <div class="flex items-center text-white font-semibold text-xs" style="height: 89px">
           <div><HireButton></HireButton></div>

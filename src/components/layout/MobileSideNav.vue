@@ -22,7 +22,7 @@
       </div>
 
     </div>
-    <div id="overlay"  @click="$emit('close-nav')"></div>
+<!--    <div id="overlay"  @click="$emit('close-nav')" ></div>-->
 
 
   </div>
@@ -45,7 +45,7 @@ export default {
   position: fixed;
   height: 100%;
   width: 100vw;
-  transform: translateY(-1200px);
+  transform: translateY(-1300px);
   left: 0;
   bottom: 0;
   transition: all .5s;

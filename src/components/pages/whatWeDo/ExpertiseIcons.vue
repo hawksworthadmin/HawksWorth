@@ -1,6 +1,6 @@
 <template>
-<div class="flex justify-between flex-wrap mt-8" style="width: 810px">
-  <div v-for="(icon, i) in icons" :key="i" class="mr-12 mt-20">
+<div class="flex justify-between items-center px-8 lg:px-0 md:px-0 flex-wrap mt-8 icons-width md:w-7/12 lg:w-800 w-full " >
+  <div v-for="(icon, i) in icons" :key="i" class="lg:mx-6 mx-3 lg:mt-20">
     <img :src="icon.src" alt="" draggable="false" class="mb-6 rotate-45 cursor-pointer"/>
     <span class="lato text-base text-gray-300 font-black" v-html="icon.name"></span>
 
@@ -60,5 +60,11 @@ name: "ExpertiseIcons",
 </script>
 
 <style scoped>
+@media screen and  (min-width: 1024px) and (max-width: 1374px) {
+  .icons-width {
+    width: 82%;
+  }
+}
+
 
 </style>

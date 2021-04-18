@@ -7,26 +7,29 @@
 </template>
 <script>
   export default {
-    // mounted() {
-    //   const header = document.querySelector(".header-text");
-    //   console.log(header)
-    //   const app_container = document.querySelector('.hero-class')
-    //   const sectionObserver = new IntersectionObserver(((entries) => {
-    //     console.log(entries)
-    //     entries.forEach(entry => {
-    //       if (!entry.isIntersecting) {
-    //         header.style.background = '#2B3367'
-    //       } else header.style.background = "transparent"
-    //     })
-    //   }), {threshold: .1})
-    //
-    //   sectionObserver.observe(app_container)
-    // },
-    // methods:{
-    //   changeHeaderColor(){
-    //
-    //   }
-    // }
+    mounted() {
+      window.addEventListener('scroll', this.changeHeaderColor)
+    },
+    methods:{
+      changeHeaderColor(){
+        const header = document.querySelector("header");
+        console.log(header)
+        const app_container = document.querySelector('.hero-class')
+        const sectionObserver = new IntersectionObserver(((entries) => {
+          console.log(entries)
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+              header.classList.add("nav-color")
+            } else header.classList.remove("nav-color")
+          })
+        }), {threshold: .1})
+
+        sectionObserver.observe(app_container)
+      }
+    },
+    beforeDestroy() {
+      window.removeEventListener('scroll', this.changeHeaderColor)
+    }
   }
 </script>
 <style>
@@ -46,4 +49,9 @@
 /*.slither-enter-to, .slither-leave {*/
 /*  transform: translateX(0);*/
 /*}*/
+.nav-color{
+  background:#2B3367;
+  z-index: 2;
+}
+
 </style>
