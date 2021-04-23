@@ -2,10 +2,10 @@
   <div class="blue" style="height: auto">
     <div class="mx-auto w-4/5">
       <div class="flex justify-end text-white pt-20">
-        <div class="justify-between flex " style="width: 500px">
-          <p style="cursor: pointer" @click="$router.push('/')">WHY WE EXIST</p>
-          <p @click="$router.push('/hawksworth/how')" style="cursor: pointer">HOW WE WORK</p>
-           <p @click="$router.push('/hawksworth/what')" style="cursor: pointer">WHAT WE DO</p>
+        <div class="justify-between md:flex lg:flex " style="width: 500px">
+          <p style="cursor: pointer" class="mb-3" @click="$router.push('/')">WHY WE EXIST</p>
+          <p @click="$router.push('/hawksworth/how')" class="mb-3" style="cursor: pointer">HOW WE WORK</p>
+           <p @click="$router.push('/hawksworth/what')"  style="cursor: pointer">WHAT WE DO</p>
         </div>
       </div>
       <div class="my-16" style="border: 0.5px solid #FFFFFF;"></div>
@@ -25,7 +25,7 @@
       </div>
       <div class="flex flex-col lg:flex-row  text-white lato justify-between pb-16">
         <div class="order-2 lg:order-1">
-          <p>© 2021 Hawksworth. All rights reserved.</p>
+          <p>© {{ new Date().getFullYear() }} Hawksworth. All rights reserved.</p>
         </div>
         <div class="flex mb-16 lg:mb-0 justify-between order-1 lg:order-2" style="width: 150px">
           <img src="@/assets/img/Gmail.svg" alt="">

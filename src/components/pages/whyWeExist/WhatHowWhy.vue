@@ -13,12 +13,12 @@
 <!--          innovators, designers, creative problem solvers, thinkers and doers, idealists and pragmatists.</p>-->
 <!--      </div>-->
       <div class="mt-14 lg:ml-6 lg:w-394 md:w-394 w-full" >
-        <h5 class="blue-color lato font-black text-lg">Why We Do It:</h5>
+        <h5 class="blue-color lato font-black text-lg">Who we are: </h5>
         <p class=" text-base text-gray-700  lato ">
-          The ‘’Why’’ behind our work. We believe in pragmatic optimism,
-          in the value and potential of our work to drive change and impact people,
-          eliminate forces holding back human prosperity. Our work uncovers opportunities,
-          builds momentum and actualize the potentials in people and communities around the world.
+          We are young entrepreneurs, intrapreneurs, investors, strategists,
+          innovators, designers, creative problem solvers, thinkers and doers,
+          idealists and pragmatists. While indigenously African, we at home
+          anywhere in Asia, the Americas, the Middle East, or Europe.
         </p>
       </div>
 

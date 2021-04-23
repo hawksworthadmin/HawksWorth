@@ -11,18 +11,25 @@ font-size: 36px;
 line-height: 119.5%;">OUR TEAM</h1>
       <div class="border-gold"></div>
       </div>
-      <transition name="fade">
-      <div class="flex justify-center justify-evenly w-3/6 mySlides fade" >
-        <div class="w-60 pt-8" style="min-width: 240px">
+      <transition
+          name="slide"
+          mode="out-in"
+          enter-class="slide-in"
+          leave-class="slide-out"
+          enter-active-class="animated slide-in-active"
+          leave-active-class="animated slide-out-active"
+      >
+      <div class="lg:flex justify-center justify-evenly lg:w-3/6 mySlides fade" >
+        <div class="w-60 pt-8" style="min-width: 240px;margin: 0 auto">
           <img :src="currentImg.src" width="233" height="267" style="min-width: 233px"/>
           <div class="arrow-background flex justify-between">
-            <img src="@/assets/img/Arrow 2.svg" class=""   @click="onPrev">
-            <img src="@/assets/img/Arrow 1.svg" alt="" @click="onNext">
+            <img src="@/assets/img/Arrow 2.svg" class="transform hover:scale-110 cursor-pointer"   @click="onPrev">
+            <img src="@/assets/img/Arrow 1.svg" class="transform hover:scale-110 cursor-pointer" alt=""  @click="onNext">
 
           </div>
         </div>
 
-        <div  class="pl-16 pt-20">
+        <div  class="lg:pl-16 pt-20 px-4">
           <h2 class="blue-color name">{{currentImg.firstName}} <span class="gold-color">{{currentImg.lastName}}</span></h2>
           <br>
           <p class="about">
@@ -31,7 +38,7 @@ line-height: 119.5%;">OUR TEAM</h1>
         </div>
 
       </div>
-        </transition>
+      </transition>
     </div>
     </div>
 
@@ -189,7 +196,7 @@ name: "OurTeam",
 }
 .border-down{
   border-bottom: 5px solid #D5AF36;;
-  max-height: 700px;
+  /*max-height: 700px;*/
 }
 /*.fade-enter-active,*/
 /*.fade-leave-active {*/
@@ -207,6 +214,29 @@ name: "OurTeam",
 /*  width:100%;*/
 /*  opacity: 0;*/
 /*}*/
+.animated {
+  transition: all 400ms;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translate(-40%, -50%);
+}
+
+.slide-in-active {
+  transition-delay: 150ms;
+}
+
+.slide-out {
+  opacity: 1;
+}
+
+.slide-out-active {
+  opacity: 0;
+  transform: translate(-60%, -50%);
+}
 
 
 </style>

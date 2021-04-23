@@ -2,7 +2,7 @@
   <div id="box" class="blue hero-class  relative">
     <Header/>
     <div class="flex flex-col items-center justify-center" style="margin: 0 auto;">
-      <div class=" text-white pt-28 px-8 lg:px-0 lg:pt-44">
+      <div id="what-hero" class=" text-white pt-28 px-8 lg:px-0 lg:pt-44">
         <h2 class="lg:text-7xl text-5xl" style=" font-family:Fulgate, serif; ">Knowledge & <br/>Service <span class="lato text-base">We deliver unrivalled insight across all development sectors</span></h2>
 
       </div>
@@ -67,9 +67,23 @@
 
 <script>
 import Header from "@/components/layout/Header";
+import {gsap} from "gsap";
 export default {
   name: "Hero",
-  components: {Header}
+  components: {Header},
+  mounted() {
+    gsap.from("#what-hero", 1, {
+      scale: 0.1,
+      y: 60,
+      yoyo: true,
+      ease: "power1.inOut",
+      stagger: {
+        amount: 1.5,
+        grid: "auto",
+        from: "center"
+      }
+    });
+  }
 }
 </script>
 

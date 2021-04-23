@@ -54,4 +54,7 @@
   z-index: 2;
 }
 
+.hooper-indicator.is-active{
+  background-color: #d5af36;
+}
 </style>

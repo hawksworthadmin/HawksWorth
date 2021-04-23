@@ -3,10 +3,10 @@
       <Header/>
     <div class="hero-wrapper">
     <div class="hero-text pt-24 lg:pt-60 md:pt-60">
-      <h2 data-aos="zoom-in">OUR GREATEST RESOURCE <span class="gold-color">KNOWLEDGE</span>.</h2>
+      <h2 id="great">OUR GREATEST RESOURCE <span class="gold-color">KNOWLEDGE</span>.</h2>
     </div>
     <div class="text-center lato font-medium text-white mt-4" >
-      <h5  data-aos="fade-down"  data-aos-delay="250">Hawksworth Advisors strategic advisory firm combines the best of private
+      <h5 id="sub-great">Hawksworth Advisors strategic advisory firm combines the best of private
         sector strategy skills and rigorous analytical capabilities along with
         deep knowledge and networks across emerging and frontier markets with
         special focus on Africa and emerging global markets.
@@ -23,6 +23,7 @@
 <script>
 import Header from "@/components/layout/Header";
 import HireButton from "@/components/pages/whyWeExist/HireButton";
+import { gsap } from "gsap";
 export default {
 name: "Hero",
   components: {HireButton, Header},
@@ -46,7 +47,11 @@ name: "Hero",
   //   changeHeaderColor(){
   //
   //   }
-  // }
+  // },
+  mounted() {
+    gsap.from("#great", {duration: 4, x: 400, ease: "bounce"});
+    gsap.to("#sub-great", {duration: 6, rotationX: 360});
+  }
 }
 </script>
 

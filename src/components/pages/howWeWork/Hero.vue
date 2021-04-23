@@ -2,7 +2,7 @@
   <div class="hero-class blue pb-32" style="margin: 0 auto; height:auto">
     <Header/>
     <div class="flex pt-20 lg:pt-40 md:pt-28 text-white lato w-full px-4 lg:px-0" style="margin: 0 auto">
-      <div class="lg:pl-80 md:pl-28">
+      <div id="how-hero" class="lg:pl-80 md:pl-28">
         <div class="flex">
           <div style="border: 3px solid #D5AF36; height: 45px; margin-top: 5px; margin-right: 15px"></div>
           <h5 class="lg:w-80 md:w-80 w-full alliance-text-width font-semibold text-base" style="color: #F4F5F7">Complex problems of today
@@ -76,6 +76,7 @@
 <script>
 import HireButton from "@/components/pages/whyWeExist/HireButton";
 import Header from "@/components/layout/Header";
+import {gsap} from "gsap";
 
 export default {
   name: "Hero",
@@ -96,11 +97,11 @@ export default {
   //
   //   sectionObserver.observe(hero_container)
   // },
-  methods:{
-    changeHeaderColor(){
+   mounted() {
+     gsap.from("#how-hero",{duration: 3, x: 300, opacity: 0, scale: 0.5});
 
-    }
-  }
+   }
+
 }
 </script>
 

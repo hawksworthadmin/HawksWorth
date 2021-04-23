@@ -1,28 +1,34 @@
 <template>
   <div class="nav-wrapper" :class="{'in-show': showMobileNav}">
     <div  class="blue-color lato sidenav">
-      <div class="mt-4">
-      <span class="ml-8" @click="$emit('close-nav')" >X Close</span>
+      <div class="mt-6 flex justify-between px-8">
+        <img src="@/assets/img/logo.svg"  @click="$router.push('/')" alt="" draggable="false"/>
+      <span class="" @click="$emit('close-nav')" >X</span>
       </div>
-      <div class="items-center flex flex-col " style="padding-top: 150px">
-        <router-link to="/"><p>WHY WE EXIST</p></router-link>
+
+      <div class="items-center route-text flex flex-col w-full" style="padding-top: 90px">
+        <div class="grid grid-cols-1 divide-y divide-gray-100">
+        <p @click="$router.push('/')">WHY WE EXIST</p>
         <br>
-        <router-link to="/hawksworth/how"><p>HOW WE WORK</p></router-link>
+          <br>
+        <p @click="$router.push('/hawksworth/how')">HOW WE WORK</p>
         <br>
-        <router-link to="/hawksworth/what"> <p>WHAT WE DO</p></router-link>
-        <br>
-        <HireButton :title="'CONTACT US'" class="mr-0 text-white"></HireButton>
-        <br>
-        <div class="border rounded-sm border-blue1 py-2 px-5 ">
-          <p>JOIN US</p>
+          <br>
+         <p @click="$router.push('/hawksworth/what')">WHAT WE DO</p>
         </div>
-        <br>
-        <HireButton class="text-white"/>
+
+        <HireButton :title="'CONTACT US'" class="mr-0 mt-16 text-white"></HireButton>
+
+<!--        <div class="border rounded-sm border-blue1 py-2 px-5 ">-->
+<!--          <p>JOIN US</p>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <HireButton class="text-white"/>-->
 
       </div>
 
     </div>
-<!--    <div id="overlay"  @click="$emit('close-nav')" ></div>-->
+    <div id="overlay"  @click="$emit('close-nav')" ></div>
 
 
   </div>
@@ -75,6 +81,17 @@ export default {
 .in-show {
   transform: translateX(0) !important
 }
+.route-text p{
+  font-family: Fulgate,serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
 
+
+  color: #2B3367;
+
+}
 
 </style>
