@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-img hero-class">
+  <div class="hero-img lazyload hero-class">
       <Header/>
     <div class="hero-wrapper">
     <div class="hero-text pt-24 lg:pt-60 md:pt-60">

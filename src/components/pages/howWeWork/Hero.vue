@@ -26,7 +26,7 @@
     <div
         class="flex px-6 lg:px-0 lg:mt-56 mt-16 flex-div flex-col items-center md:flex-col lg:flex-row ">
       <div>
-        <img src="@/assets/img/man-writing.png" alt="" width="531" height="660"/>
+        <img src="@/assets/img/man-writing.png" data-src="@/assets/img/man-writing.png" class="lazyload" alt="" width="531" height="660"/>
       </div>
 
       <div class="lato  lg:px-36 lg:mx-auto  pr-0 lg:w-998 alliance-group  w-full">

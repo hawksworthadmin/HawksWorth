@@ -8,7 +8,7 @@
       </div>
       <div class="lg:mb-36 mb-20 mt-12 lg:mt-20" style="border: 1px solid rgba(244, 245, 247, 0.8); width: 780px;"></div>
       <div class="flex justify-between flex-col px-8 lg:px-0 lg:flex-row alliance-text-width lg:w-3/4">
-        <img src="@/assets/img/plant.svg"/>
+        <img src="@/assets/img/plant.svg" data-src="@/assets/img/plant.svg" class="lazyload"/>
         <div class="mt-3">
           <div class="lato lg:ml-40">
             <h4 class="gold-color font-black">STRATEGY</h4>
