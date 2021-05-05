@@ -11,7 +11,8 @@
       <ExpertiseIcons v-show="active==='Expertise Areas:'"/>
       </transition>
     <transition name="slide-fade">
-      <ExpertiseIcons v-show="active==='Service Lines:'"/>
+      <ServicesIcons  v-show="active==='Service Lines:'"/>
+<!--      <ExpertiseIcons v-show="active==='Service Lines:'"/>-->
     </transition>
 
 
@@ -20,9 +21,10 @@
 
 <script>
 import ExpertiseIcons from "@/components/pages/whatWeDo/ExpertiseIcons";
+import ServicesIcons from "@/components/pages/whatWeDo/ServicesIcons";
 export default {
 name: "ExpertiseAssessmentTab",
-  components: {ExpertiseIcons},
+  components: {ServicesIcons, ExpertiseIcons},
   data(){
     return{
       tabs:[

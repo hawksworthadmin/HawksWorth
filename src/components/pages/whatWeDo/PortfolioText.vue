@@ -6,8 +6,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 24px;
 line-height: 153%; margin-bottom: 5px">{{data.title}}</h5>
-      <span class="lato text-base text-gray-400 font-black">
-              {{data.msg}}
+      <span class="lato text-base text-gray-400 font-black" v-html="data.msg">
             </span>
 
     </div>

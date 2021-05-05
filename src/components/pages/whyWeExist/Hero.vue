@@ -49,8 +49,8 @@ name: "Hero",
   //   }
   // },
   mounted() {
-    gsap.from("#great", {duration: 4, x: 400, ease: "bounce"});
-    gsap.to("#sub-great", {duration: 6, rotationX: 360});
+    gsap.from("#great", {duration: 2, x: 400, ease: "slow"});
+    gsap.from("#sub-great", {duration: 3,opacity: 0,  x: -600, ease: "slow"});
   }
 }
 </script>

@@ -331,7 +331,7 @@ export default {
 /*.hooper-slide.is-current {*/
 /*  transform: scale(1.2);*/
 /*}*/
-.hooper-indicator { height: 15px; width: 15px; border-radius: 50%; background-color: #FFFFFF; }
+.hooper-indicator { height: 15px; width: 15px; border-radius: 50%;color: rgba(244, 245, 247, 0.78);opacity: 0.75; margin-top: 20px }
 .hooper-indicator.is-active,.hooper-indicator:hover{
   background-color: #d5af36;
   border: 1px solid #d5af36;

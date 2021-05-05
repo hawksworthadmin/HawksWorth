@@ -1,7 +1,7 @@
 <template>
   <div class="hero-class blue pb-32" style="margin: 0 auto; height:auto">
     <Header/>
-    <div class="flex pt-20 lg:pt-40 md:pt-28 text-white lato w-full px-4 lg:px-0" style="margin: 0 auto">
+    <div class="flex pt-24 lg:pt-40 md:pt-28 text-white lato w-full px-4 lg:px-0" style="margin: 0 auto">
       <div id="how-hero" class="lg:pl-80 md:pl-28">
         <div class="flex">
           <div style="border: 3px solid #D5AF36; height: 45px; margin-top: 5px; margin-right: 15px"></div>
@@ -98,7 +98,7 @@ export default {
   //   sectionObserver.observe(hero_container)
   // },
    mounted() {
-     gsap.from("#how-hero",{duration: 3, x: 300, opacity: 0, scale: 0.5});
+     gsap.from("#how-hero",{duration: 1, x: 300, opacity: 0, scale: 0.5});
 
    }
 

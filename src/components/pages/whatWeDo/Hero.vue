@@ -125,6 +125,10 @@ export default {
     width: 85%;
   }
 }
-
+@media only screen and (max-width: 768px) {
+  #box::after{
+    display: none;
+  }
+}
 
 </style>
