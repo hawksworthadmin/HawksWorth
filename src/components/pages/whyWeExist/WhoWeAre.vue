@@ -14,7 +14,9 @@
       <div class="flex font-semibold text-xs">
         <HireButton class="text-white"/>
         <div class="border rounded-sm border-black py-2 px-5 ">
+          <a  class="no-underline" href="https://b0m8i3fwr7p.typeform.com/to/zepnNKjT" target="_blank">
           <p class="blue-color">JOIN US</p>
+          </a>
         </div>
       </div>
     </div>

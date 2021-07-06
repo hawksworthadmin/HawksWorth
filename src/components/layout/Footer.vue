@@ -19,7 +19,9 @@
         <div class="flex items-center text-white font-semibold text-xs" style="height: 89px">
           <div><HireButton></HireButton></div>
           <div class="border rounded-sm border-white py-2 px-5 " style="height: 34px">
+            <a  class="no-underline" href="https://b0m8i3fwr7p.typeform.com/to/zepnNKjT" target="_blank">
             <p>JOIN US</p>
+            </a>
           </div>
         </div>
       </div>

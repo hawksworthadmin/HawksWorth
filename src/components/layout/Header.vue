@@ -25,7 +25,9 @@
     <div class="flex font-semibold text-xs">
       <HireButton></HireButton>
       <div class="border rounded-sm border-white cursor-pointer py-2 px-5 transform hover:scale-110 ">
-        <p>JOIN US</p>
+        <a  class="no-underline" href="https://b0m8i3fwr7p.typeform.com/to/zepnNKjT" target="_blank">
+         <p>JOIN US</p>
+        </a>
       </div>
     </div>
   </header>
